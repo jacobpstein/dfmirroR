@@ -7,6 +7,9 @@
 #' * `simulated_df` a data frame object containing a simulated mirror of the input df where each specified column has the same mean and standard deviation as the input df
 #' * `code` a string vector that can be run in conjunction with `cat()` to output easily shareable code to recreate `simulated_df`
 #'
+#'@importFrom fitdistrplus fitdist
+#'@import MASS
+
 #' @export
 #'
 #' @examples
