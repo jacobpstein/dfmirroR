@@ -1,0 +1,86 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# dfmirroR
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of dfmirroR is to create mirrored version of data sets *and* output a string with the code to reproduce that copy. Data scientists often have questions about analyzing a specific data set, but in many cases cannot share their data. 
+
+*dfmirrorR* creates a copy of the data based on the distribution of specified columns. In recognition that we also often have questions we want to post publicly, and the need to create producable examples, the package also has functionality for outputting a simplified, pasteable version of code for creating the mirrored data frame object. 
+
+One neat thing about dfmirrorR is that it tests whether or not columns are normally distributed and mirrors the specified columns accordingly so that your "fake" data resembles your original data.
+
+## Installation
+
+You can install the development version of dfmirroR from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("jacobpstein/dfmirroR")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem. Let's say you are working with the `airquality` dataset. This contains a `Temp` column that is approximately normal based on a basic Shapiro-Wilk test and another column `Ozone`, which is non-normally distributed. You want to simulate a data set to test a model and need to mirror `airquality` but with more observations and then create a reproducible example.
+
+Here's what the `Ozone` column looks like in the original data:
+```{r example1}
+library(dfmirroR)
+library(ggplot2)
+
+data(airquality)
+
+# take a look at the Ozone variable
+
+ggplot(airquality) +
+  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF") +
+  theme_minimal() +
+  labs(title = "Distribution of 153 Ozone observations from the airquality dataset")
+
+
+```
+
+Now, let's run `dfmirrorR` to create a similar column.
+
+```{r example2}
+
+air_mirror <- simulate_dataframe(airquality, num_obs = 1000, columns_to_simulate = c("Ozone", "Temp"))
+```
+
+This creates a `list()` object that contains a new data frame with 1,000 observations based on the distributions of the `Ozone` and `Temp` columns in the `input_df`.  
+
+Take a look at the mirrored colum for Ozone:
+```{r example3}
+
+ggplot(air_mirror$simulated_df) +
+  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF") +
+  theme_minimal() +
+  labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
+
+```
+
+## Print code to share your simulated data
+
+There are other packages that can mirror a dataframe. The excellent [`faux`](https://debruine.github.io/faux/) comes to mind. However, one addition of the `dfmirroR` package is that it prints code to add to a reproducible example if you need to ask a question on Stackoverflow or elsewhere. 
+
+For example, from our `air_mirror` list object above, we can extract the `code` object, which is just a string containing the relevant code. Combining this object with the `cat()` function provides clean, easily shareable output.
+
+```{r example4}
+
+cat(air_mirror$code)
+
+```
