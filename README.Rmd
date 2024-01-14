@@ -1,9 +1,9 @@
 ---
-output: github_document
+  output: github_document
 ---
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
+  
+  <!-- README.md is generated from README.Rmd. Please edit that file -->
+  
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
@@ -16,9 +16,9 @@ knitr::opts_chunk$set(
 # dfmirroR
 
 <!-- badges: start -->
-<!-- badges: end -->
-
-The goal of dfmirroR is to create mirrored version of data sets *and* output a string with the code to reproduce that copy. Data scientists often have questions about analyzing a specific data set, but in many cases cannot share their data. 
+  <!-- badges: end -->
+  
+  The goal of dfmirroR is to create mirrored version of data sets *and* output a string with the code to reproduce that copy. Data scientists often have questions about analyzing a specific data set, but in many cases cannot share their data. 
 
 *dfmirrorR* creates a copy of the data based on the distribution of specified columns. In recognition that we also often have questions we want to post publicly, and the need to create producable examples, the package also has functionality for outputting a simplified, pasteable version of code for creating the mirrored data frame object. 
 
@@ -27,8 +27,8 @@ One neat thing about dfmirrorR is that it tests whether or not columns are norma
 ## Installation
 
 You can install the development version of dfmirroR from [GitHub](https://github.com/) with:
-
-``` r
+  
+  ``` r
 # install.packages("devtools")
 devtools::install_github("jacobpstein/dfmirroR")
 ```

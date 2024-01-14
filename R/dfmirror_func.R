@@ -24,6 +24,7 @@
 #' cat(mirrored_df$code)
 
 
+
 simulate_dataframe <- function(input_df, num_obs = 1, columns_to_simulate = colnames(input_df)) {
 
   simulated_df <- data.frame(matrix(NA, nrow = num_obs, ncol = length(columns_to_simulate)))
@@ -43,12 +44,13 @@ simulate_dataframe <- function(input_df, num_obs = 1, columns_to_simulate = coln
         code <- paste0(code, "  ", col, " = rnorm(", num_obs, ", mean = ", dist_fit$estimate[1], ", sd = ", dist_fit$estimate[2], "),\n")
       } else {
         # If p-value <= 0.05, assume non-normal distribution
-        simulated_df[[col]] <- sample(input_df[[col]], num_obs, replace = TRUE)
-        code <- paste0(code, "  ", col, " = sample(", input_df[[col]], ", " , num_obs, ", replace = TRUE),\n")
+        sampled_values <- unique(input_df[[col]])
+        simulated_df[[col]] <- sample(sampled_values, num_obs, replace = TRUE)
+        code <- paste0(code, "  ", col, " = sample(c(", paste(sampled_values, collapse = ", "), "), ", num_obs, ", replace = TRUE),\n")
       }
     } else if (is.factor(input_df[[col]])) {
       simulated_df[[col]] <- factor(sample(levels(input_df[[col]]), num_obs, replace = TRUE))
-      code <- paste0(code, "  ", col, " = factor(sample(c(", paste(paste0("\"", levels(input_df[[col]]), "\""), collapse = ", "), "), ", num_obs, ", replace = TRUE)),\n")
+      code <- paste0(code, "  ", col, " = factor(sample(c(", paste(levels(input_df[[col]]), collapse = ", "), "), ", num_obs, ", replace = TRUE)),\n")
     } else if (is.character(input_df[[col]])) {
       simulated_df[[col]] <- replicate(num_obs, paste(sample(letters, 10, replace = TRUE), collapse = ""))
       code <- paste0(code, "  ", col, " = replicate(", num_obs, ", paste(sample(letters, 10, replace = TRUE), collapse = '')),\n")
@@ -59,5 +61,4 @@ simulate_dataframe <- function(input_df, num_obs = 1, columns_to_simulate = coln
   code <- paste0(code, "\n)\n")
 
   return(list(simulated_df = simulated_df, code = code))
-
 }
