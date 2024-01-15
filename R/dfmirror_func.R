@@ -8,7 +8,6 @@
 #' * `code` a string vector that can be run in conjunction with `cat()` to output easily shareable code to recreate `simulated_df`
 #'
 #'@importFrom fitdistrplus fitdist
-#'@import MASS
 #'@importFrom stats rnorm
 #'@importFrom stats shapiro.test
 
