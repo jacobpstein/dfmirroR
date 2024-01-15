@@ -85,3 +85,8 @@ For example, from our `air_mirror` list object above, we can extract the `code` 
 cat(air_mirror$code)
 
 ```
+
+### Citations
+This package is indebted to the great [`fitdistrplus`](https://github.com/aursiber/fitdistrplus) package, which allows `dfmirroR` to dynamically mimic the distribution of input data. For more, see: 
+  
+Marie Laure Delignette-Muller, Christophe Dutang (2015). *fitdistrplus: An R Package for Fitting Distributions. Journal of Statistical Software*. https://www.jstatsoft.org/article/view/v064i04 DOI 10.18637/jss.v064.i04.

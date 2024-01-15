@@ -82,7 +82,7 @@ ggplot(air_mirror$simulated_df) +
   theme_minimal() +
   labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-#> Warning: Removed 15 rows containing non-finite values (`stat_bin()`).
+#> Warning: Removed 17 rows containing non-finite values (`stat_bin()`).
 ```
 
 <img src="man/figures/README-example3-1.png" width="100%" />
@@ -108,3 +108,15 @@ cat(air_mirror$code)
 #>   Temp = sample(c(67, 72, 74, 62, 56, 66, 65, 59, 61, 69, 68, 58, 64, 57, 73, 81, 79, 76, 78, 84, 85, 82, 87, 90, 93, 92, 80, 77, 75, 83, 88, 89, 91, 86, 97, 94, 96, 71, 63, 70), 1000, replace = TRUE)
 #> )
 ```
+
+### Citations
+
+This package is indebted to the great
+[`fitdistrplus`](https://github.com/aursiber/fitdistrplus) package,
+which allows `dfmirroR` to dynamically mimic the distribution of input
+data. For more, see:
+
+Marie Laure Delignette-Muller, Christophe Dutang (2015). *fitdistrplus:
+An R Package for Fitting Distributions. Journal of Statistical
+Software*. <https://www.jstatsoft.org/article/view/v064i04> DOI
+10.18637/jss.v064.i04.
