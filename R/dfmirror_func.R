@@ -21,7 +21,8 @@
 #' # Print the mirrored data frame
 #'print(mirrored_df$simulated_df)
 #'
-#' # Output code to create the mirrored data frame for asking questions or supporting other reproducable tasks
+#' # Output code to create the mirrored data frame for asking
+#' # questions or supporting other reproducible tasks
 #' cat(mirrored_df$code)
 
 
