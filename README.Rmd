@@ -2,7 +2,7 @@
   output: github_document
 ---
   
-  <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- README.md is generated from README.Rmd. Please edit that file -->
   
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 # dfmirroR
 
 <!-- badges: start -->
-  <!-- badges: end -->
+<!-- badges: end -->
   
 The goal of dfmirroR is to create mirrored version of data sets *and* output a string with the code to reproduce that copy. Data scientists often have questions about analyzing a specific data set, but in many cases cannot share their data. 
 
