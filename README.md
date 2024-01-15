@@ -82,7 +82,7 @@ ggplot(air_mirror$simulated_df) +
   theme_minimal() +
   labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-#> Warning: Removed 11 rows containing non-finite values (`stat_bin()`).
+#> Warning: Removed 23 rows containing non-finite values (`stat_bin()`).
 ```
 
 <img src="man/figures/README-example3-1.png" width="100%" />
@@ -120,3 +120,8 @@ Marie Laure Delignette-Muller, Christophe Dutang (2015). *fitdistrplus:
 An R Package for Fitting Distributions. Journal of Statistical
 Software*. <https://www.jstatsoft.org/article/view/v064i04> DOI
 10.18637/jss.v064.i04.
+
+This package also pull from the core R
+[`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html)
+package. Special thanks to the R Core Team, without whom I would almost
+definitely be unemployed.
