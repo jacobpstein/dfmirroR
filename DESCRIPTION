@@ -1,6 +1,6 @@
 Package: dfmirroR
 Title: Simulate a Data Frame Mirroring an Input and Produce Shareable Simulation Code
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person("Jacob", "Patterson-Stein", email = "jacobpstein@gmail.com",
   role = c("aut", "cre"))
