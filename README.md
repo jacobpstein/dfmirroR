@@ -15,7 +15,7 @@ cases cannot share their data.
 
 *dfmirrorR* creates a copy of the data based on the distribution of
 specified columns. In recognition that we also often have questions we
-want to post publicly, and the need to create producable examples, the
+want to post publicly, and the need to create reproducable examples, the
 package also has functionality for outputting a simplified, pasteable
 version of code for creating the mirrored data frame object.
 
@@ -82,7 +82,7 @@ ggplot(air_mirror$simulated_df) +
   theme_minimal() +
   labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-#> Warning: Removed 17 rows containing non-finite values (`stat_bin()`).
+#> Warning: Removed 11 rows containing non-finite values (`stat_bin()`).
 ```
 
 <img src="man/figures/README-example3-1.png" width="100%" />

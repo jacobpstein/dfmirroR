@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
   
 The goal of dfmirroR is to create mirrored version of data sets *and* output a string with the code to reproduce that copy. Data scientists often have questions about analyzing a specific data set, but in many cases cannot share their data. 
 
-*dfmirrorR* creates a copy of the data based on the distribution of specified columns. In recognition that we also often have questions we want to post publicly, and the need to create producable examples, the package also has functionality for outputting a simplified, pasteable version of code for creating the mirrored data frame object. 
+*dfmirrorR* creates a copy of the data based on the distribution of specified columns. In recognition that we also often have questions we want to post publicly, and the need to create reproducable examples, the package also has functionality for outputting a simplified, pasteable version of code for creating the mirrored data frame object. 
 
 One neat thing about dfmirrorR is that it tests whether or not columns are normally distributed and mirrors the specified columns accordingly so that your "fake" data resembles your original data.
 
