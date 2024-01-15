@@ -9,6 +9,9 @@
 #'
 #'@importFrom fitdistrplus fitdist
 #'@import MASS
+#'@importFrom stats rnorm
+#'@importFrom stats shapiro.test
+
 
 #' @export
 #'

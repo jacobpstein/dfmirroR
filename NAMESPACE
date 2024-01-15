@@ -3,3 +3,5 @@
 export(simulate_dataframe)
 import(MASS)
 importFrom(fitdistrplus,fitdist)
+importFrom(stats,rnorm)
+importFrom(stats,shapiro.test)
