@@ -1,0 +1,6 @@
+The dfmirroR package as a whole is distributed under MIT. The dfmirroR package includes other open source software components. The following is a list of these components:
+
+* fitdistrplus: GPL (>= 2)
+* MASS: GPL-2 | GPL-3
+* stats: Part of R @VERSION@
+
