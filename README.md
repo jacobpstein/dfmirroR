@@ -4,6 +4,7 @@
 # dfmirroR
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal of dfmirroR is to create mirrored version of data sets *and*
@@ -35,11 +36,10 @@ devtools::install_github("jacobpstein/dfmirroR")
 
 This is a basic example which shows you how to solve a common problem.
 Let’s say you are working with the `airquality` dataset. This contains a
-`Temp` column that is approximately normal based on a basic Shapiro-Wilk
-test and another column `Ozone`, which is non-normally distributed. You
-want to simulate a data set to test a model and need to mirror
-`airquality` but with more observations and then create a reproducible
-example.
+`Temp` column that is approximately normal based on a Shapiro-Wilk test
+and another column `Ozone`, which is non-normally distributed. You want
+to simulate a data set to test a model and need to mirror `airquality`
+but with more observations and then create a reproducible example.
 
 Here’s what the `Ozone` column looks like in the original data:
 
@@ -81,7 +81,7 @@ ggplot(air_mirror$simulated_df) +
   theme_minimal() +
   labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-#> Warning: Removed 18 rows containing non-finite values (`stat_bin()`).
+#> Warning: Removed 19 rows containing non-finite values (`stat_bin()`).
 ```
 
 <img src="man/figures/README-example3-1.png" width="100%" />
