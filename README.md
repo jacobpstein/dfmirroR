@@ -4,6 +4,8 @@
 # dfmirroR
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of dfmirroR is to create mirrored version of data sets *and*
@@ -80,7 +82,7 @@ ggplot(air_mirror$simulated_df) +
   theme_minimal() +
   labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-#> Warning: Removed 10 rows containing non-finite values (`stat_bin()`).
+#> Warning: Removed 12 rows containing non-finite values (`stat_bin()`).
 ```
 
 <img src="man/figures/README-example3-1.png" width="100%" />

@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # dfmirroR
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
   
 The goal of dfmirroR is to create mirrored version of data sets *and* output a string with the code to reproduce that copy. Data scientists often have questions about analyzing a specific data set, but in many cases cannot share their data. 
