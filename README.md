@@ -82,7 +82,7 @@ ggplot(air_mirror$simulated_df) +
   theme_minimal() +
   labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
 #> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-#> Warning: Removed 17 rows containing non-finite values (`stat_bin()`).
+#> Warning: Removed 18 rows containing non-finite values (`stat_bin()`).
 ```
 
 <img src="man/figures/README-example3-1.png" width="100%" />
@@ -92,8 +92,8 @@ ggplot(air_mirror$simulated_df) +
 There are other packages that can mirror a dataframe. The excellent
 [`faux`](https://debruine.github.io/faux/) comes to mind. However, one
 addition of the `dfmirroR` package is that it prints code to add to a
-reproducible example if you need to ask a question on Stackoverflow or
-elsewhere.
+reproducible example if you need to ask a question on
+[Stackoverflow](https://stackoverflow.com) or elsewhere.
 
 For example, from our `air_mirror` list object above, we can extract the
 `code` object, which is just a string containing the relevant code.
