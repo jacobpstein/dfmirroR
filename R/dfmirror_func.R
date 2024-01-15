@@ -16,7 +16,7 @@
 #' @export
 #'
 #' @examples
-#'
+#'library(dfmirrorR)
 #'# # Run the function and create an object called `mirrored_df`
 #' mirrored_df <- simulate_dataframe(mtcars, num_obs = 10, columns_to_simulate = c("mpg", "wt"))
 #'
