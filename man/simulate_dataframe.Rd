@@ -28,7 +28,6 @@ A list a list with
 Simulate data that mirrors a data frame and output code to re-create the simulation
 }
 \examples{
-library(dfmirrorR)
 # # Run the function and create an object called `mirrored_df`
 mirrored_df <- simulate_dataframe(mtcars, num_obs = 10, columns_to_simulate = c("mpg", "wt"))
 
