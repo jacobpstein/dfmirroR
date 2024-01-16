@@ -18,7 +18,7 @@ simulate_dataframe(
 \item{columns_to_simulate}{One or more columns from the \code{input_df} to simulate. The default is all columns.}
 }
 \value{
-A list a list with
+A list with
 \itemize{
 \item \code{simulated_df} a data frame object containing a simulated mirror of the input df where each specified column has the same mean and standard deviation as the input df
 \item \code{code} a string vector that can be run in conjunction with \code{cat()} to output easily shareable code to recreate \code{simulated_df}

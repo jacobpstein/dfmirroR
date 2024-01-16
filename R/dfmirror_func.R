@@ -3,7 +3,7 @@
 #' @param input_df A data frame.
 #' @param num_obs A numeric value specifying how many observations (i.e., rows) to simulate.
 #' @param columns_to_simulate One or more columns from the `input_df` to simulate. The default is all columns.
-#' @return A list a list with
+#' @return A list with
 #' * `simulated_df` a data frame object containing a simulated mirror of the input df where each specified column has the same mean and standard deviation as the input df
 #' * `code` a string vector that can be run in conjunction with `cat()` to output easily shareable code to recreate `simulated_df`
 #'
