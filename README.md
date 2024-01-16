@@ -31,6 +31,17 @@ You can install the development version of dfmirroR from
 ``` r
 # install.packages("devtools")
 devtools::install_github("jacobpstein/dfmirroR")
+#> Downloading GitHub repo jacobpstein/dfmirroR@HEAD
+#> 
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpK1n7Xv/remotese78e95b04bd/jacobpstein-dfmirroR-b58b0fd/DESCRIPTION’ ... OK
+#> * preparing ‘dfmirroR’:
+#> * checking DESCRIPTION meta-information ... OK
+#> * checking for LF line-endings in source and make files and shell scripts
+#> * checking for empty or unneeded directories
+#> * building ‘dfmirroR_1.0.0.tar.gz’
+#> Installing package into '/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpI2CyXg/temp_libpathe54e137b85bb'
+#> (as 'lib' is unspecified)
 ```
 
 ## Example

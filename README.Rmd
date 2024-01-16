@@ -29,7 +29,7 @@ One neat thing about dfmirrorR is that it tests whether or not columns are norma
 
 You can install the development version of dfmirroR from [GitHub](https://github.com/) with:
   
-```r
+```{r}
 # install.packages("devtools")
 devtools::install_github("jacobpstein/dfmirroR")
 ```
