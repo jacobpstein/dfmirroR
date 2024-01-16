@@ -53,10 +53,9 @@ data(airquality)
 # take a look at the Ozone variable
 
 ggplot(airquality) +
-  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF") +
+  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF", bins = 20) +
   theme_minimal() +
   labs(title = "Distribution of 153 Ozone observations from the airquality dataset")
-#> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 #> Warning: Removed 37 rows containing non-finite values (`stat_bin()`).
 ```
 
@@ -78,11 +77,10 @@ Take a look at the mirrored colum for Ozone:
 ``` r
 
 ggplot(air_mirror$simulated_df) +
-  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF") +
+  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF", bins = 20) +
   theme_minimal() +
   labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
-#> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-#> Warning: Removed 18 rows containing non-finite values (`stat_bin()`).
+#> Warning: Removed 11 rows containing non-finite values (`stat_bin()`).
 ```
 
 <img src="man/figures/README-example3-1.png" width="100%" />

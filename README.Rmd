@@ -48,7 +48,7 @@ data(airquality)
 # take a look at the Ozone variable
 
 ggplot(airquality) +
-  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF") +
+  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF", bins = 20) +
   theme_minimal() +
   labs(title = "Distribution of 153 Ozone observations from the airquality dataset")
 
@@ -68,7 +68,7 @@ Take a look at the mirrored colum for Ozone:
 ```{r example3}
 
 ggplot(air_mirror$simulated_df) +
-  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF") +
+  geom_histogram(aes(Ozone), col = "white", fill = "#AFDFEF", bins = 20) +
   theme_minimal() +
   labs(title = "Distribution of 1,000 Ozone observations from a mirrored dataset")
 
