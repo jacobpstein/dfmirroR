@@ -29,13 +29,13 @@ One neat thing about dfmirrorR is that it tests whether or not columns are norma
 
 You can install the CRAN version of the package with:
 
-```{r}
+```{r, message = FALSE, warning = FALSE}
 install.packages("dfmirroR")
 ```
 
 You can install the development version of dfmirroR from [GitHub](https://github.com/) with:
   
-```{r, message = FALSE}
+```{r, message = FALSE, warning = FALSE}
 # install.packages("devtools")
 devtools::install_github("jacobpstein/dfmirroR")
 ```

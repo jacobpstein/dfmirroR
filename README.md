@@ -29,11 +29,9 @@ You can install the CRAN version of the package with:
 
 ``` r
 install.packages("dfmirroR")
-#> Installing package into '/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp3gxakg/temp_libpath277aa748ddc'
-#> (as 'lib' is unspecified)
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp4ofq7m/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp5Mjkus/downloaded_packages
 ```
 
 You can install the development version of dfmirroR from
@@ -44,12 +42,12 @@ You can install the development version of dfmirroR from
 devtools::install_github("jacobpstein/dfmirroR")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp4ofq7m/remotes292a6756d06c/jacobpstein-dfmirroR-25e0b99/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp5Mjkus/remotes2c2653a0ebbf/jacobpstein-dfmirroR-6ac8e07/DESCRIPTION’ ... OK
 #> * preparing ‘dfmirroR’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
 #> * checking for empty or unneeded directories
-#> * building ‘dfmirroR_2.0.0.tar.gz’
+#> * building ‘dfmirroR_2.0.0.9000.tar.gz’
 ```
 
 ## Example
