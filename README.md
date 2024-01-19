@@ -31,7 +31,7 @@ You can install the CRAN version of the package with:
 install.packages("dfmirroR")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp5Mjkus/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpGnAijC/downloaded_packages
 ```
 
 You can install the development version of dfmirroR from
@@ -42,7 +42,7 @@ You can install the development version of dfmirroR from
 devtools::install_github("jacobpstein/dfmirroR")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp5Mjkus/remotes2c2653a0ebbf/jacobpstein-dfmirroR-6ac8e07/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpGnAijC/remotes2d04127ef8ed/jacobpstein-dfmirroR-197d941/DESCRIPTION’ ... OK
 #> * preparing ‘dfmirroR’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
