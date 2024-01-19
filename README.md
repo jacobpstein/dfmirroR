@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/dfmirroR)](https://CRAN.R-project.org/package=dfmirroR)
 <!-- badges: end -->
 
 The goal of dfmirroR is to create mirrored version of data sets *and*
@@ -31,7 +33,7 @@ You can install the CRAN version of the package with:
 install.packages("dfmirroR")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpGnAijC/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmpm4GgX0/downloaded_packages
 ```
 
 You can install the development version of dfmirroR from
@@ -42,7 +44,7 @@ You can install the development version of dfmirroR from
 devtools::install_github("jacobpstein/dfmirroR")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpGnAijC/remotes2d04127ef8ed/jacobpstein-dfmirroR-197d941/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmpm4GgX0/remotes2e3e2af9b245/jacobpstein-dfmirroR-e27683c/DESCRIPTION’ ... OK
 #> * preparing ‘dfmirroR’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
