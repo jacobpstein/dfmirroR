@@ -11,6 +11,7 @@
 #'@importFrom stats rnorm
 #'@importFrom stats shapiro.test
 #'@importFrom stats rgamma
+#'@importFrom stats sd
 #'@importFrom MASS fitdistr
 #'@importFrom e1071 skewness
 
@@ -30,6 +31,17 @@
 
 
 simulate_dataframe <- function(input_df, num_obs = 1, columns_to_simulate = colnames(input_df)) {
+
+
+  simulate_skewed_gamma <- function(column_data, num_obs) {
+    # Custom function to simulate skewed gamma distribution while maintaining mean and standard deviation
+    mean_val <- mean(column_data)
+    sd_val <- sd(column_data)
+    shape <- (mean_val / sd_val)^2
+    rate <- mean_val / sd_val^2
+    simulated_data <- rgamma(num_obs, shape = shape, rate = rate)
+    return(simulated_data)
+  }
 
   simulated_df <- data.frame(matrix(NA, nrow = num_obs, ncol = length(columns_to_simulate)))
   colnames(simulated_df) <- columns_to_simulate
@@ -53,10 +65,9 @@ simulate_dataframe <- function(input_df, num_obs = 1, columns_to_simulate = coln
         skew_value <- skewness(input_df[[col]])
 
         if (!is.na(skew_value) && abs(skew_value) > 1) {
-          # If skewness is greater than 1, simulate skewed data
-          dist_fit <- fitdistr(input_df[[col]], "gamma")
-          simulated_df[[col]] <- rgamma(num_obs, shape = dist_fit$estimate[1], scale = dist_fit$estimate[2])
-          code <- paste0(code, "  ", col, " = rgamma(", num_obs, ", shape = ", dist_fit$estimate[1], ", scale = ", dist_fit$estimate[2], "),\n")
+          # If skewness is greater than 1, simulate skewed data using custom function
+          simulated_df[[col]] <- simulate_skewed_gamma(input_df[[col]], num_obs)
+          code <- paste0(code, "  ", col, " = simulate_skewed_gamma(input_df[['", col, "']], ", num_obs, "),\n")
         } else {
           # If skewness is not significant or missing, simulate as before
           sampled_values <- unique(input_df[[col]])
