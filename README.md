@@ -43,8 +43,8 @@ devtools::install_github("jacobpstein/dfmirroR")
 #> * building ‘dfmirroR_2.0.0.9000.tar.gz’
 ```
 
-You can install also the CRAN version of the package, but it’s not as
-good as the development version:
+You can also install the CRAN version of the package, but it’s not as
+good as the development version (at least until I submit a new version):
 
 ``` r
 install.packages("dfmirroR")
