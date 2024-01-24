@@ -27,15 +27,6 @@ so that your “fake” data resembles your original data.
 
 ## Installation
 
-You can install the CRAN version of the package with:
-
-``` r
-install.packages("dfmirroR")
-#> 
-#> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmpm4GgX0/downloaded_packages
-```
-
 You can install the development version of dfmirroR from
 [GitHub](https://github.com/) with:
 
@@ -44,12 +35,22 @@ You can install the development version of dfmirroR from
 devtools::install_github("jacobpstein/dfmirroR")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmpm4GgX0/remotes2e3e2af9b245/jacobpstein-dfmirroR-e27683c/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpXtuqfz/remotes3d5614845c0/jacobpstein-dfmirroR-eb82880/DESCRIPTION’ ... OK
 #> * preparing ‘dfmirroR’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
 #> * checking for empty or unneeded directories
 #> * building ‘dfmirroR_2.0.0.9000.tar.gz’
+```
+
+You can install also the CRAN version of the package, but it’s not as
+good as the development version:
+
+``` r
+install.packages("dfmirroR")
+#> 
+#> The downloaded binary packages are in
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpXtuqfz/downloaded_packages
 ```
 
 ## Example
