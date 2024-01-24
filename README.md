@@ -35,7 +35,7 @@ You can install the development version of dfmirroR from
 devtools::install_github("jacobpstein/dfmirroR")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpXtuqfz/remotes3d5614845c0/jacobpstein-dfmirroR-eb82880/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpMLV5Bp/remotes434c6766e5a8/jacobpstein-dfmirroR-d325a4a/DESCRIPTION’ ... OK
 #> * preparing ‘dfmirroR’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
@@ -50,7 +50,7 @@ good as the development version:
 install.packages("dfmirroR")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpXtuqfz/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpMLV5Bp/downloaded_packages
 ```
 
 ## Example
@@ -139,6 +139,9 @@ Marie Laure Delignette-Muller, Christophe Dutang (2015). *fitdistrplus:
 An R Package for Fitting Distributions. Journal of Statistical
 Software*. <https://www.jstatsoft.org/article/view/v064i04> DOI
 10.18637/jss.v064.i04.
+
+David Meyer, et
+al. [e1071](https://cran.r-project.org/web/packages/e1071/e1071.pdf)
 
 This package also pulls from the core R
 [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html)

@@ -2,6 +2,7 @@
 
 export(simulate_dataframe)
 importFrom(MASS,fitdistr)
+importFrom(e1071,skewness)
 importFrom(fitdistrplus,fitdist)
 importFrom(stats,rgamma)
 importFrom(stats,rnorm)

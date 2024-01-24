@@ -17,6 +17,7 @@ Config/testthat/edition: 3
 Imports: 
     fitdistrplus,
     stats, 
-    MASS
+    MASS, 
+    e1071
 URL: https://github.com/jacobpstein/dfmirroR
 BugReports: https://github.com/jacobpstein/dfmirroR/issues

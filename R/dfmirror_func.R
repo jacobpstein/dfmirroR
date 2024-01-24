@@ -12,7 +12,7 @@
 #'@importFrom stats shapiro.test
 #'@importFrom stats rgamma
 #'@importFrom MASS fitdistr
-
+#'@importFrom e1071 skewness
 
 #' @export
 #'
