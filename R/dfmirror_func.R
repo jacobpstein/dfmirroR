@@ -48,16 +48,17 @@ simulate_dataframe <- function(input_df, num_obs = 1, columns_to_simulate = coln
         code <- paste0(code, "  ", col, " = rnorm(", num_obs, ", mean = ", dist_fit$estimate[1], ", sd = ", dist_fit$estimate[2], "),\n")
       } else {
         # If p-value <= 0.05 or lacks variation, assume non-normal distribution
-        # Check for skewness
-        skewness <- skewness(input_df[[col]])
+        # Impute missing values before checking skewness
+        input_df[[col]][is.na(input_df[[col]])] <- mean(input_df[[col]], na.rm = TRUE)
+        skew_value <- skewness(input_df[[col]])
 
-        if (abs(skewness) > 1) {
+        if (!is.na(skew_value) && abs(skew_value) > 1) {
           # If skewness is greater than 1, simulate skewed data
           dist_fit <- fitdistr(input_df[[col]], "gamma")
           simulated_df[[col]] <- rgamma(num_obs, shape = dist_fit$estimate[1], scale = dist_fit$estimate[2])
           code <- paste0(code, "  ", col, " = rgamma(", num_obs, ", shape = ", dist_fit$estimate[1], ", scale = ", dist_fit$estimate[2], "),\n")
         } else {
-          # If skewness is not significant, simulate as before
+          # If skewness is not significant or missing, simulate as before
           sampled_values <- unique(input_df[[col]])
           simulated_df[[col]] <- sample(sampled_values, num_obs, replace = TRUE)
           code <- paste0(code, "  ", col, " = sample(c(", paste(sampled_values, collapse = ", "), "), ", num_obs, ", replace = TRUE),\n")
