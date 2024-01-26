@@ -35,7 +35,7 @@ You can install the development version of dfmirroR from
 devtools::install_github("jacobpstein/dfmirroR")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp9iRQXq/remotes48f579ff6c24/jacobpstein-dfmirroR-07cd39f/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpxskUhR/remotes58c03a91a9a3/jacobpstein-dfmirroR-3c825d2/DESCRIPTION’ ... OK
 #> * preparing ‘dfmirroR’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
@@ -50,7 +50,7 @@ good as the development version:
 install.packages("dfmirroR")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp9iRQXq/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpxskUhR/downloaded_packages
 ```
 
 ## Example
@@ -131,9 +131,9 @@ cat(air_mirror$code)
 ### Citations
 
 This package is indebted to the great
-[`fitdistrplus`](https://github.com/aursiber/fitdistrplus) package,
-which allows `dfmirroR` to dynamically mimic the distribution of input
-data. For more, see:
+[`fitdistrplus`](https://cran.r-project.org/web/packages/fitdistrplus/)
+package, which allows `dfmirroR` to dynamically mimic the distribution
+of input data. For more, see:
 
 Marie Laure Delignette-Muller, Christophe Dutang (2015). *fitdistrplus:
 An R Package for Fitting Distributions. Journal of Statistical
@@ -141,12 +141,13 @@ Software*. <https://www.jstatsoft.org/article/view/v064i04> DOI
 10.18637/jss.v064.i04.
 
 This package relies on the `skewness` function from: David Meyer, et
-al. [e1071](https://cran.r-project.org/web/packages/e1071/e1071.pdf).
+al. [e1071](https://cran.r-project.org/web/packages/e1071/).
 
 The `MASS` package also provides some functionality. Learn more here:
 Venables WN, Ripley BD (2002). Modern Applied Statistics with S, Fourth
 edition. Springer, New York. ISBN 0-387-95457-0,
-<https://www.stats.ox.ac.uk/pub/MASS4/>.
+<https://www.stats.ox.ac.uk/pub/MASS4/.devtools>::check(remote = TRUE,
+manual = TRUE)
 
 This package also pulls from the core R
 [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html)
