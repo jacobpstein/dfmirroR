@@ -35,7 +35,7 @@ You can install the development version of dfmirroR from
 devtools::install_github("jacobpstein/dfmirroR")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpxskUhR/remotes58c03a91a9a3/jacobpstein-dfmirroR-3c825d2/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp1EOiPC/remotes59bd63d33690/jacobpstein-dfmirroR-3c825d2/DESCRIPTION’ ... OK
 #> * preparing ‘dfmirroR’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
@@ -50,7 +50,7 @@ good as the development version:
 install.packages("dfmirroR")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpxskUhR/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp1EOiPC/downloaded_packages
 ```
 
 ## Example
@@ -141,13 +141,12 @@ Software*. <https://www.jstatsoft.org/article/view/v064i04> DOI
 10.18637/jss.v064.i04.
 
 This package relies on the `skewness` function from: David Meyer, et
-al. [e1071](https://cran.r-project.org/web/packages/e1071/).
+al. [e1071](https://cran.r-project.org/web/packages/e1071/e1071.pdf).
 
 The `MASS` package also provides some functionality. Learn more here:
 Venables WN, Ripley BD (2002). Modern Applied Statistics with S, Fourth
 edition. Springer, New York. ISBN 0-387-95457-0,
-<https://www.stats.ox.ac.uk/pub/MASS4/.devtools>::check(remote = TRUE,
-manual = TRUE)
+<https://www.stats.ox.ac.uk/pub/MASS4/>
 
 This package also pulls from the core R
 [`stats`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html)
