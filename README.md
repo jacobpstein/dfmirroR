@@ -35,22 +35,22 @@ You can install the development version of dfmirroR from
 devtools::install_github("jacobpstein/dfmirroR")
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp1EOiPC/remotes59bd63d33690/jacobpstein-dfmirroR-3c825d2/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpPA5DAX/remotes62227c0e005b/jacobpstein-dfmirroR-3c8ca46/DESCRIPTION’ ... OK
 #> * preparing ‘dfmirroR’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
 #> * checking for empty or unneeded directories
-#> * building ‘dfmirroR_2.0.0.9000.tar.gz’
+#> * building ‘dfmirroR_2.1.0.tar.gz’
 ```
 
-You can also install the CRAN version of the package, but it’s not as
-good as the development version (at least until I submit a new version):
+You can install also the CRAN version of the package, but it’s not as
+good as the development version:
 
 ``` r
 install.packages("dfmirroR")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp1EOiPC/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpPA5DAX/downloaded_packages
 ```
 
 ## Example
@@ -131,7 +131,7 @@ cat(air_mirror$code)
 ### Citations
 
 This package is indebted to the great
-[`fitdistrplus`](https://cran.r-project.org/web/packages/fitdistrplus/)
+[`fitdistrplus`](https://CRAN.R-project.org/package=fitdistrplus)
 package, which allows `dfmirroR` to dynamically mimic the distribution
 of input data. For more, see:
 
@@ -141,7 +141,7 @@ Software*. <https://www.jstatsoft.org/article/view/v064i04> DOI
 10.18637/jss.v064.i04.
 
 This package relies on the `skewness` function from: David Meyer, et
-al. [e1071](https://cran.r-project.org/web/packages/e1071/e1071.pdf).
+al. [e1071](https://CRAN.R-project.org/package=e1071).
 
 The `MASS` package also provides some functionality. Learn more here:
 Venables WN, Ripley BD (2002). Modern Applied Statistics with S, Fourth
