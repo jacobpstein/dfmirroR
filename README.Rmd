@@ -26,7 +26,7 @@ The goal of dfmirroR is to create mirrored version of data sets *and* output a s
 
 One neat thing about dfmirrorR is that it tests whether or not columns are normally distributed and mirrors the specified columns accordingly so that your "fake" data resembles your original data.
 
-## Installation
+## Installation 
 
 You can install the development version of dfmirroR from [GitHub](https://github.com/) with:
   
@@ -36,10 +36,10 @@ devtools::install_github("jacobpstein/dfmirroR")
 ```
 
 
-You can install also the CRAN version of the package, but it's not as good as the development version:
+You can install also the CRAN version of the package, but it's not as good as the development version and some features need to be submitted still:
 
 ```{r message = FALSE, warning = FALSE }
-install.packages("dfmirroR")
+install.packages("dfmirroR", repos = "http://cran.us.r-project.org")
 ```
 
 ## Example

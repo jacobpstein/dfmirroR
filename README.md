@@ -33,24 +33,17 @@ You can install the development version of dfmirroR from
 ``` r
 # install.packages("devtools")
 devtools::install_github("jacobpstein/dfmirroR")
-#> 
-#> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/RtmpPA5DAX/remotes62227c0e005b/jacobpstein-dfmirroR-3c8ca46/DESCRIPTION’ ... OK
-#> * preparing ‘dfmirroR’:
-#> * checking DESCRIPTION meta-information ... OK
-#> * checking for LF line-endings in source and make files and shell scripts
-#> * checking for empty or unneeded directories
-#> * building ‘dfmirroR_2.1.0.tar.gz’
 ```
 
 You can install also the CRAN version of the package, but it’s not as
-good as the development version:
+good as the development version and some features need to be submitted
+still:
 
 ``` r
-install.packages("dfmirroR")
+install.packages("dfmirroR", repos = "http://cran.us.r-project.org")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpPA5DAX/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpanmjXr/downloaded_packages
 ```
 
 ## Example
@@ -123,7 +116,7 @@ shareable output.
 
 cat(air_mirror$code)
 #> simulated_df <- data.frame(
-#>   Ozone = sample(c(41, 36, 12, 18, NA, 28, 23, 19, 8, 7, 16, 11, 14, 34, 6, 30, 1, 4, 32, 45, 115, 37, 29, 71, 39, 21, 20, 13, 135, 49, 64, 40, 77, 97, 85, 10, 27, 48, 35, 61, 79, 63, 80, 108, 52, 82, 50, 59, 9, 78, 66, 122, 89, 110, 44, 65, 22, 31, 168, 73, 76, 118, 84, 96, 91, 47, 24, 46), 1000, replace = TRUE),
+#>   Ozone = simulate_skewed_gamma(input_df[['Ozone']], 1000),
 #>   Wind = rnorm(1000, mean = 9.95751633986928, sd = 3.51146940195185)
 #> )
 ```

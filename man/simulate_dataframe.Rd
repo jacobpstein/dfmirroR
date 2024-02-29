@@ -7,7 +7,8 @@
 simulate_dataframe(
   input_df,
   num_obs = 1,
-  columns_to_simulate = colnames(input_df)
+  columns_to_simulate = colnames(input_df),
+  hide_cols = FALSE
 )
 }
 \arguments{
@@ -16,6 +17,8 @@ simulate_dataframe(
 \item{num_obs}{A numeric value specifying how many observations (i.e., rows) to simulate.}
 
 \item{columns_to_simulate}{One or more columns from the \code{input_df} to simulate. The default is all columns.}
+
+\item{hide_cols}{Select \code{TRUE} to replace column names with anonymized names that take the form of "v1," "v2," and so on for each column.}
 }
 \value{
 A list with
