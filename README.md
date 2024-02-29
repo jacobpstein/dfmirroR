@@ -33,6 +33,16 @@ You can install the development version of dfmirroR from
 ``` r
 # install.packages("devtools")
 devtools::install_github("jacobpstein/dfmirroR")
+#> 
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#>      checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp2LlCq7/remotesb525b8e198f/jacobpstein-dfmirroR-b42847a/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp2LlCq7/remotesb525b8e198f/jacobpstein-dfmirroR-b42847a/DESCRIPTION’
+#>   ─  preparing ‘dfmirroR’:
+#> ✔  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>   ─  building ‘dfmirroR_2.2.0.tar.gz’
+#>      
+#> 
 ```
 
 You can install also the CRAN version of the package, but it’s not as
@@ -43,7 +53,7 @@ still:
 install.packages("dfmirroR", repos = "http://cran.us.r-project.org")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//RtmpanmjXr/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp2LlCq7/downloaded_packages
 ```
 
 ## Example

@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# dfmirroR
+# dfmirroR 
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml)
