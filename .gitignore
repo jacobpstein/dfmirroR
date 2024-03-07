@@ -6,4 +6,9 @@
 .httr-oauth
 .DS_Store
 .quarto
+.license
+.namespace
+.news.md
+.cran-comments.md
+.dfmirroR.Rproj
 
