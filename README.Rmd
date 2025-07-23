@@ -16,7 +16,6 @@ knitr::opts_chunk$set(
 # dfmirroR 
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml)
 [![CRAN status](https://www.r-pkg.org/badges/version/dfmirroR)](https://CRAN.R-project.org/package=dfmirroR)
 <!-- badges: end -->
   

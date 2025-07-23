@@ -5,7 +5,6 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/jacobpstein/dfmirroR/actions/workflows/R-CMD-check.yaml)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/dfmirroR)](https://CRAN.R-project.org/package=dfmirroR)
 <!-- badges: end -->
@@ -33,14 +32,17 @@ You can install the development version of dfmirroR from
 ``` r
 # install.packages("devtools")
 devtools::install_github("jacobpstein/dfmirroR")
+#> fitdistrplus (1.2-2 -> 1.2-4) [CRAN]
 #> 
+#> The downloaded binary packages are in
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp8WHANE/downloaded_packages
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#>      checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp2LlCq7/remotesb525b8e198f/jacobpstein-dfmirroR-b42847a/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp2LlCq7/remotesb525b8e198f/jacobpstein-dfmirroR-b42847a/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp8WHANE/remotes151fe29ae872e/jacobpstein-dfmirroR-afcae87/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T/Rtmp8WHANE/remotes151fe29ae872e/jacobpstein-dfmirroR-afcae87/DESCRIPTION’
 #>   ─  preparing ‘dfmirroR’:
-#> ✔  checking DESCRIPTION meta-information
+#>      checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts
 #>   ─  checking for empty or unneeded directories
-#>   ─  building ‘dfmirroR_2.2.0.tar.gz’
+#>   ─  building ‘dfmirroR_2.2.0.9000.tar.gz’
 #>      
 #> 
 ```
@@ -53,7 +55,7 @@ still:
 install.packages("dfmirroR", repos = "http://cran.us.r-project.org")
 #> 
 #> The downloaded binary packages are in
-#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp2LlCq7/downloaded_packages
+#>  /var/folders/5m/kgrgm7ns0q10f7dp56dv4ylm0000gn/T//Rtmp8WHANE/downloaded_packages
 ```
 
 ## Example
