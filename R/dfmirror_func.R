@@ -4,7 +4,7 @@
 #' @param num_obs A numeric value specifying how many observations (i.e., rows) to simulate.
 #' @param columns_to_simulate One or more columns from the `input_df` to simulate. The default is all columns.
 #' @param hide_cols Select `TRUE` to replace column names with anonymized names that take the form of "v1," "v2," and so on for each column.
-#' #' @param seed Optional random seed for reproducibility
+#' @param seed Optional random seed for reproducibility
 #' @return A list with
 #' * `simulated_df` a data frame object containing a simulated mirror of the input df where each specified column has the same mean and standard deviation as the input df
 #' * `code` a string vector that can be run in conjunction with `cat()` to output easily shareable code to recreate `simulated_df`
@@ -16,6 +16,7 @@
 #'@importFrom stats sd
 #'@importFrom MASS fitdistr
 #'@importFrom e1071 skewness
+#'@importFrom stats na.omit
 
 #' @export
 #'
